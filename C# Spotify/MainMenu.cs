@@ -17,8 +17,8 @@ namespace C__Spotify
             mainMenu = new List<Option>
             {
                 new Option("Playlist", () => PlaylistMenu.Menu()),
-                new Option("Friends", () =>  WriteTemporaryMessage("How Are You")),
-                new Option("Artist", () =>  WriteTemporaryMessage("Today")),
+                new Option("Friends", () =>  PlaylistMenu.Menu()),
+                new Option("Artist", () =>  PlaylistMenu.Menu()),
                 new Option("Exit", () => Environment.Exit(0)),
             };
 
